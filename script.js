@@ -25,7 +25,9 @@ btn.addEventListener("click",runChrono )
 
 function runChrono () {
   
- waitingCj.classList.add("hide");
+
+   if (sisa === null){
+waitingCj.classList.add("hide");
 dancingImg.classList.remove("hide");
 sisa = setInterval(()=>{
 
@@ -44,6 +46,8 @@ secShow.textContent= `Seconds→ ${sec}`;
 
 return sisa
 
+   }
+ 
 }
 
 
